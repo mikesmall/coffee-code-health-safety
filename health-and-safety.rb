@@ -157,7 +157,6 @@ violations = [
 
 counted = Hash.new(0)
 violations.each { |violation| counted[violation[:violation_category]] += 1 }
-counted = Hash[counted.map { |foo,bar| [foo,bar.to_s] } ]
 puts counted
 
 # 2. Find the earliest violation in each category.
@@ -165,3 +164,13 @@ puts counted
 
 
 # 3. Find the latest violation in each category.
+
+latest = Hash.new(0)
+newthing = Hash.new(0)
+violations.each do |violation|
+  if violation[:violation_category] == "Garbage and Refuse"
+    latest[violation[:violation_category]]
+  newthing = latest.max_by(:date)
+  end
+end#do
+puts newthing
