@@ -1,5 +1,8 @@
+# 1. Find the number of violations in each violation category.
 
+# 2. Find the earliest violation in each category.
 
+# 3. Find the latest violation in each category.
 
 [
   {violation_category: "Garbage and Refuse", date: "2012-11-01 00:00:00", inspection_id: "232528"},
