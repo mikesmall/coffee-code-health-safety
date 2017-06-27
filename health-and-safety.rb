@@ -155,6 +155,13 @@ violations = [
 
 # 1. Find the number of violations in each violation category.
 
+counted = Hash.new(0)
+violations.each { |violation| counted[violation[:violation_category]] += 1 }
+counted = Hash[counted.map { |foo,bar| [foo,bar.to_s] } ]
+puts counted
+
 # 2. Find the earliest violation in each category.
+
+
 
 # 3. Find the latest violation in each category.
