@@ -1,10 +1,4 @@
-# 1. Find the number of violations in each violation category.
-
-# 2. Find the earliest violation in each category.
-
-# 3. Find the latest violation in each category.
-
-[
+violations = [
   {violation_category: "Garbage and Refuse", date: "2012-11-01 00:00:00", inspection_id: "232528"},
   {violation_category: "Unsanitary Conditions", date: "2012-12-26 00:00:00", inspection_id: "230544"},
   {violation_category: "Garbage and Refuse", date: "2012-12-26 00:00:00", inspection_id: "230543"},
@@ -158,3 +152,9 @@
   {violation_category: "Unsanitary Conditions", date: "2012-09-19 00:00:00", inspection_id: "223814"},
   {violation_category: "Garbage and Refuse", date: "2012-09-19 00:00:00", inspection_id: "223813"}
 ]
+
+# 1. Find the number of violations in each violation category.
+
+# 2. Find the earliest violation in each category.
+
+# 3. Find the latest violation in each category.
